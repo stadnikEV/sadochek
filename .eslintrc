@@ -1,0 +1,15 @@
+{
+  "extends": ["airbnb-typescript"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        paths: ['src'],
+      },
+    },
+  },
+  "rules": {
+    "@typescript-eslint/semi": ["error", "never"],
+    "react/prop-types": "off"
+  }
+}

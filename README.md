@@ -1,3 +1,9 @@
+Установка
+
+1. eslint для IDE
+2. typescript для IDE
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
