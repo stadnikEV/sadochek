@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
+import { Route } from 'react-router-dom'
+
+import { Main } from 'features/Main'
+import initGA from './utils/init-ga'
+
+import './css/fonts.css'
+import './css/reset.css'
+import './css/base.css'
+
 
 const App: React.FC = () => {
-  const [input, setInput] = useState('state')
-
-
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(e.target.value)
-  }
+  useEffect(() => initGA(), [])
 
   return (
-    <input
-      onChange={onChange}
-      value={input}
-      type="text"
-    />
+    <Route exact path="/" component={Main} />
   )
 }
 

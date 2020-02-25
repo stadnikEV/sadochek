@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'FuturaNewBold-Reg';
+  src: url('../fonts/FuturaNewBold-Reg.eot');
+  src: url('../fonts/FuturaNewBold-Reg.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FuturaNewBold-Reg.woff') format('woff'),
+  url('../fonts/FuturaNewBold-Reg.woff2') format('woff2'),
+  url('../fonts/FuturaNewBold-Reg.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

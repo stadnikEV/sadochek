@@ -1,14 +1,7 @@
 import React from 'react'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import rootReducer from './root-reducer'
-
-
-declare global {
-  interface Window {
-    __REDUX_DEVTOOLS_EXTENSION__: any
-  }
-}
+import rootReducer from './rootReducer'
 
 
 const Store: React.FC = ({ children }) => {
