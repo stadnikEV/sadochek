@@ -11,7 +11,6 @@ import sadochekImg from 'common/images/sadochek.png'
 import backgroundImg from 'common/images/background.png'
 import backgroundMobImg from 'common/images/background-mob.png'
 
-import '../style/topPage.scss'
 
 const TopPage: React.FC = () => {
   const { device, orientation } = useScreenParams()

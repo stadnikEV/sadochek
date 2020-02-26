@@ -39,7 +39,7 @@ const useScreenParams = () => {
       orientation: (width > height) ? 'horizontal' : 'vertical',
       aspectRatio: width / height,
     })
-  }, 20)
+  }, 50)
 
 
   useEffect(() => {

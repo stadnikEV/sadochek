@@ -3,7 +3,7 @@ import React from 'react'
 import TopPage from './components/TopPage'
 import BottomPage from './components/BottomPage'
 
-import './style/main.scss'
+import './style.scss'
 
 const Main: React.FC = () => (
   <div className="main">

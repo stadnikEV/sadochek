@@ -3,13 +3,12 @@ import React from 'react'
 import useScreenParams from 'common/hooks/useScreenParams'
 import './style.scss'
 
-// interface paramsType {
-//   device: string,
-//   orientation: string | null,
-// }
-
 const Steps: React.FC = () => {
   const { device, orientation } = useScreenParams()
+
+  if (!device) {
+    return <></>
+  }
 
   return (
     <div className={`steps steps_${device} steps_${orientation}`}>
@@ -32,10 +31,8 @@ const Steps: React.FC = () => {
           </div>
           <div className="steps__text steps__text-second">
             РЕЄСТРУЙ КОДИ НА САЙТІ ЧИ В ЧАТ-БОТІ АБО ВІДПРАВЛЯЙ SMS НА НОМЕР 5828
+            <div className="steps__info">i</div>
           </div>
-          <span className="steps__info">
-            i
-          </span>
         </div>
         <div className="steps__item">
           <div className="steps__num-cont steps__num-cont_third">
